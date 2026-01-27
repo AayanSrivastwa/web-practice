@@ -75,16 +75,65 @@
 //})
 
 
-const container =document.querySelector(".container");
-const button =document.querySelector("button");
-
-container.addEventListener("click", function (event){
-    console.log("Container Clicked");
-}, false);
+//const container =document.querySelector(".container");
+//const button =document.querySelector("button");
+//
+//container.addEventListener("click", function (event){
+//    console.log("Container Clicked");
+//}, false);
 
 //true ka matlab hai ki event capturing hoga
 //false ka matlab hai ki event bubbling hoga
 
-button.addEventListener("click", function (event){
-    console.log("Button Clicked ");
-}, false);
+//button.addEventListener("click", function (event){
+//}, false);
+//  console.log("Button Clicked ")  
+
+
+// debugger
+// console.log(a) 
+// console.log(b)
+
+// let a= 23456
+// var b= 5343
+
+
+
+// function print(){
+//     console.log("jai mata di")
+
+// }
+
+// function first (){
+//     second()
+// }
+
+// function second () {
+//     third()
+// }
+// function third (){
+//     console.trace()
+// }
+
+// first()
+
+// console.log("Hello")
+
+// function infinite(){
+//     infinite()               // yeah use hota hai for infinite message ya jab bhi site work nahi karti 
+// }
+// infinite()
+
+// let total=40
+
+// function calculate(){
+//     console.log(total)
+//     //let total=100 // agar yeah hoga to error aaega aur agar var hua to undefined
+//     var total=100
+// }
+
+// calculate()
+
+console.log("first line")
+
+console.log("secondline")
