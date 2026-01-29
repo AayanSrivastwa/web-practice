@@ -134,6 +134,39 @@
 
 // calculate()
 
-console.log("first line")
+// console.log("first line")
+// setTimeout(()=>{console.log("after 5 sec")},5000)
+// console.log("secondline")
 
-console.log("secondline")
+//setTimeout(() => { alert("NAYVA KAB JAA RAHI HAI MARNE"); }, 2000)// THIS IS USED FOR ALERTS MESSAGES 
+
+// setTimeout(() => { (console.log("setinterval")); }, 2000) 
+
+// const timerID= setInterval(() => {console.log("set interval")}, 10000); 
+
+
+// clearInterval(timerID) // yaha pai id aati hai jab mai 141 line wale ko kisi variable mai lele like in line 144
+
+// let a=1
+// const variable=setInterval(()=> {console.log(a);a++;}, 1000)
+// const timerID= setTimeout(() => {
+//     clearInterval(variable)
+// }, 10000)
+
+
+const name = document.querySelector("#name")
+const btn = document.querySelector(".btn")
+const list=document.querySelector(".list")
+btn.addEventListener("click",()=>{
+    const li=document.createElement("li")
+    const del=document.createElement("button")
+    del.innerText="Delete"
+    li.innerText=name.value;                   // to add the input name as li item to the list
+    del.addEventListener("click",()=>{
+        list.removeChild(li) })               // to delete the particular li item on clicking delete button
+    li.appendChild(del)
+    list.appendChild(li)
+    name.value=""
+})
+
+
