@@ -56,7 +56,7 @@
 
 //btn.addEventListener("keydown", message);
 
-//btn.addEventListener("keydown", message);      // yeah dono use hoye hia like jab bhi ham 
+//btn.addEventListener("keydown", message);      // yeah dono use hoye hia like jab bhi ham
 
 //btn.addEventListener("click", message);
 //btn.removeEventListener("click", message); (used to remove the event listener)
@@ -87,11 +87,11 @@
 
 //button.addEventListener("click", function (event){
 //}, false);
-//  console.log("Button Clicked ")  
+//  console.log("Button Clicked ")
 
 
 // debugger
-// console.log(a) 
+// console.log(a)
 // console.log(b)
 
 // let a= 23456
@@ -120,7 +120,7 @@
 // console.log("Hello")
 
 // function infinite(){
-//     infinite()               // yeah use hota hai for infinite message ya jab bhi site work nahi karti 
+//     infinite()               // yeah use hota hai for infinite message ya jab bhi site work nahi karti
 // }
 // infinite()
 
@@ -138,11 +138,11 @@
 // setTimeout(()=>{console.log("after 5 sec")},5000)
 // console.log("secondline")
 
-//setTimeout(() => { alert("NAYVA KAB JAA RAHI HAI MARNE"); }, 2000)// THIS IS USED FOR ALERTS MESSAGES 
+//setTimeout(() => { alert("NAYVA KAB JAA RAHI HAI MARNE"); }, 2000)// THIS IS USED FOR ALERTS MESSAGES
 
-// setTimeout(() => { (console.log("setinterval")); }, 2000) 
+// setTimeout(() => { (console.log("setinterval")); }, 2000)
 
-// const timerID= setInterval(() => {console.log("set interval")}, 10000); 
+// const timerID= setInterval(() => {console.log("set interval")}, 10000);
 
 
 // clearInterval(timerID) // yaha pai id aati hai jab mai 141 line wale ko kisi variable mai lele like in line 144
@@ -150,23 +150,76 @@
 // let a=1
 // const variable=setInterval(()=> {console.log(a);a++;}, 1000)
 // const timerID= setTimeout(() => {
-//     clearInterval(variable)
-// }, 10000)
+    //     clearInterval(variable)
+    // }, 10000)
+    
+    // const name = document.querySelector("#name")
+    // const btn = document.querySelector(".btn")
+    // const list = document.querySelector(".list")
+    // btn.addEventListener("click", () => {
+        // // we can also use if- else to statement to prevent agar mai kuch fill na bhi karu tab bhi enteries ho rahi hai usko rokne ke liye
+        //     if(name.value===""){
+            //         alert ("enter the name")
+            //     }
+            //// else{
+                ////     const li = document.createElement("li")
+                ////     const del = document.createElement("button")
+                ////   del.innerText = "Delete"
+                ////     li.innerText = name.value;                   // to add the input name as li item to the list
+                ////    del.addEventListener("click", () => {        // to delete the particular li item on clicking delete button
+                ////         list.removeChild(li)
+                ////     })
+                ////     li.appendChild(del)
+                ////     list.appendChild(li)
+                ////     name.value = ""
+                //// }    
+                //     const li = document.createElement("li")
+                //     const del = document.createElement("button")
+                //     del.innerText = "Delete"
+//     li.innerText = name.value;                   // to add the input name as li item to the list
+//     del.addEventListener("click", () => {        // to delete the particular li item on clicking delete button
+//         list.removeChild(li)
+//     })              
+//     li.appendChild(del)
+//     list.appendChild(li)
+//     name.value = ""
+// })
 
 
-const name = document.querySelector("#name")
-const btn = document.querySelector(".btn")
-const list=document.querySelector(".list")
-btn.addEventListener("click",()=>{
-    const li=document.createElement("li")
-    const del=document.createElement("button")
-    del.innerText="Delete"
-    li.innerText=name.value;                   // to add the input name as li item to the list
-    del.addEventListener("click",()=>{
-        list.removeChild(li) })               // to delete the particular li item on clicking delete button
-    li.appendChild(del)
-    list.appendChild(li)
-    name.value=""
-})
+// console.log("first line")
+// setTimeout(()=>{console.log("after 5 sec")},5000)
+// console.log("secondline")
 
 
+// function print(num) {
+//     setTimeout(()=>{
+//         console.log("inside print")
+//         num()
+
+//     },2000)
+// }
+
+// function sample() { // callback fn
+//     console.log("inside callback")
+
+// }
+// print(sample)
+
+
+console.log("Starting homework...");
+
+setTimeout(() => {
+    console.log("Homework done!");
+    console.log("Starting dinner...");
+
+    setTimeout(() => {
+        console.log("Dinner done!");
+        console.log("Getting ready to go out...");
+
+        setTimeout(() => {
+            console.log("Going to the playground!");
+        }, 1000); // after dinner
+
+    }, 1500); // dinner time
+
+}, 2000); // homework time
